@@ -105,4 +105,9 @@ public class Animal implements Comparable<Animal> {
         return name + " the " + description + " " + type + " age: " + age + ".";
     }
 
+
+    @Override
+    public int compareTo(Animal other) {
+       return this.name.compareTo(other.name);
+    }
 }
