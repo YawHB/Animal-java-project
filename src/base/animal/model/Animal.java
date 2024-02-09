@@ -1,5 +1,6 @@
-public class Animal {
+package base.animal.model;
 
+public class Animal {
     private int id;
     private String name;
     private String type;
@@ -97,4 +98,10 @@ public class Animal {
     public void setWinner(boolean winner) {
         this.winner = winner;
     }
+
+    @Override
+    public String toString() {
+        return name + "the" + description + " " + type + "age: " + age + ".";
+    }
+
 }
