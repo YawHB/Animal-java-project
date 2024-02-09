@@ -1,6 +1,6 @@
 package base.animal.model;
 
-public class Animal {
+public class Animal implements Comparable<Animal> {
     private int id;
     private String name;
     private String type;
@@ -8,6 +8,7 @@ public class Animal {
     private int age;
     private boolean star;
     private boolean winner;
+
 
     // default constructor
     public Animal() {
@@ -101,7 +102,7 @@ public class Animal {
 
     @Override
     public String toString() {
-        return name + "the" + description + " " + type + "age: " + age + ".";
+        return name + " the " + description + " " + type + " age: " + age + ".";
     }
 
 }
